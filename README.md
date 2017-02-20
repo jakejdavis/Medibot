@@ -10,7 +10,7 @@ Medibot is a robot to help the disabled and elderly in emergency situations, we 
 ## Authors
 
 * **Luke Bonner** 
-* **Oon** 
+* **Euan Gilfillan** 
 * **Jake Davis** 
 
 ## License
