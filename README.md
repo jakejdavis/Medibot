@@ -3,9 +3,9 @@
 Medibot is a robot to help the disabled and elderly in emergency situations, we intend to to showcase this project at the Big Bang Fair.
 
 ## Branches
-* [Master](http://jakedavis.zapto.org:8081/jakeyjdavis/Medibot/tree/master)
-* [Server](http://jakedavis.zapto.org:8081/jakeyjdavis/Medibot/tree/server)
-* [Website](http://jakedavis.zapto.org:8081/jakeyjdavis/Medibot/tree/website)
+* [Master](https://github.com/jakeyjdavis/Medibot/tree/master)
+* [Server](https:/github.com/jakeyjdavis/Medibot/tree/server)
+* [Website](https://github.com/jakeyjdavis/Medibot/tree/website)
 
 ## Built With
 
