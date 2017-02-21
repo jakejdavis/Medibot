@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="top-bar-left">
+        <div class="menu-text">Medibot</div>
+    </div>
+</div>
+
+<div class="row align-top align-justify container">
+    <div class="columns robot-list-column shrink">
+        <ul class="menu robot-list-panel">
+            <li>
+                <a href="#">Medibot 1</a>
+                <hr class="small-hr">
+            </li>
+        </ul>
+    </div>
+    <div class="columns control-panel" id="information">
+
+    </div>
+    <div class="columns camera-panel small-3">
+        <img class="camera-stream" src="http://192.168.43.105:5000/video_feed" onclick="streamFullscreenToggle()">
+    </div>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+<script src="js/vendor/foundation.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

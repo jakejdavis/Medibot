@@ -1,0 +1,40 @@
+.top-bar {
+  background-color: #00334e; }
+
+* {
+  color: #fff; }
+
+body {
+  background-color: #001521; }
+
+.robot-list-column {
+  background-color: #002033; }
+
+.camera-panel {
+  background-color: #00080e; }
+
+.columns {
+  height: 100%; }
+
+.row {
+  margin: 0;
+  max-width: none; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+
+.small-hr {
+  margin: 0 auto; }
+
+.camera-stream {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto; }
+
+.fullscreen {
+  z-index: 9999;
+  position: fixed; }
+
+/*# sourceMappingURL=app.css.map */
