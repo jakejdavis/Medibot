@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         xmlns:local="clr-namespace:Medibot"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
@@ -35,7 +36,11 @@
             </DockPanel>
             <GridSplitter Grid.Column="3" HorizontalAlignment="Stretch" Margin="0,0,0,0"/>
             <DockPanel Margin="0.491,0,-0.018,0" Grid.Column="4" Background="#FFFF9090">
-                <WebBrowser x:Name="wbCameraStream" Height="124" VerticalAlignment="Top"/>
+                <Grid>
+                    <wpf:ChromiumWebBrowser Grid.Row="0"
+                                x:Name="Browser"
+                                Address="http://192.168.43.105:5000/video_feed" Margin="0,-100,0,0"/>
+                </Grid>
             </DockPanel>
 
         </Grid>
