@@ -3,6 +3,7 @@ __pycache__/
 .idea/
 VB Client/Medibot VB/bin
 VB Client/Medibot VB/obj
+VB Client/packages
 *.user
 *.suo
 *.sln.cache
