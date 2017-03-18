@@ -4,8 +4,7 @@ Medibot is a robot to help the disabled and elderly in emergency situations, we 
 
 ## Built With
 
-* [GoPiGo](https://www.dexterindustries.com/gopigo/) - The Medibot base
-* [Foundation](http://foundation.zurb.com/) - The css framework used
+<img src="https://raw.githubusercontent.com/jakejdavis/Medibot/master/stack.png" width="100%" height="auto" />
 
 ## Authors
 
