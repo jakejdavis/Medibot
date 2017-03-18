@@ -11,7 +11,3 @@ Medibot is a robot to help the disabled and elderly in emergency situations, we 
 * **Luke Bonner** 
 * **Euan Gilfillan** 
 * **Jake Davis** 
-
-## License
-
-This project currently does not have a license
