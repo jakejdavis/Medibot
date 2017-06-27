@@ -1,6 +1,6 @@
 $(document).foundation();
 
-var domain = "http://192.168.43.105:5000/";
+var domain = "http://192.168.137.221:5000/";
 var cameraStream = $(".camera-stream");
 var cameraStreamHeightAuto = $(cameraStream).height();
 var cameraStreamOffset = $(cameraStream).offset();
@@ -28,37 +28,43 @@ $.getJSON(domain + "servo?pos=90", function () {
     console.log("servo?pos=90")
 })
 
+var lastKey = ""
+
 $(document).keydown(function(event) {
         // CONTACT SERVER
-        console.log("MOVE " + event.key);
-        if (event.key == "s") {
-            action = "move?drcn=backward"
-        }
-        if (event.key == "w") {
-            action = "move?drcn=forward"
-        }
-        if (event.key == "d") {
-            action = "move?drcn=right"
-        }
-        if (event.key == "a") {
-            action = "move?drcn=left"
-        }
-        if (event.key == "ArrowLeft") {
-            if (servoPos < 177) {
-                servoPos += 3
+        if (event.key == lastKey) {
+            console.log("MOVE " + event.key);
+            if (event.key == "s") {
+                action = "move?drcn=backward"
             }
-            action = "servo?pos=" + servoPos
-        }
-        if (event.key == "ArrowRight") {
-            if (servoPos > 3) {
-                servoPos -= 3
+            if (event.key == "w") {
+                action = "move?drcn=forward"
             }
-            action = "servo?pos=" + servoPos
+            if (event.key == "d") {
+                action = "move?drcn=right"
+            }
+            if (event.key == "a") {
+                action = "move?drcn=left"
+            }
+            if (event.key == "ArrowLeft") {
+                if (servoPos < 177) {
+                    servoPos += 3
+                }
+                action = "servo?pos=" + servoPos
+            }
+            if (event.key == "ArrowRight") {
+                if (servoPos > 3) {
+                    servoPos -= 3
+                }
+                action = "servo?pos=" + servoPos
+            }
+            if (event.key == "ArrowUp") {
+                servoPos = 90
+                action = "servo?pos=90"
+            }
         }
-        if (event.key == "ArrowUp") {
-            servoPos = 90
-            action = "servo?pos=90"
-        }
+
+        lastKey = event.key
         $.getJSON(domain + action, function () {
             console.log(action)
         })
@@ -98,12 +104,3 @@ function streamFullscreenToggle() {
     }
 }
 
-function reloadStream() {
-    var d = new Date();
-    $(cameraStream).attr("src", domain + "get_stream?" + d.getTime());
-    return true;
-}
-
-window.setInterval(function(){
-    //reloadStream();
-}, 1000);

@@ -1,7 +1,6 @@
 from flask import Flask, send_file, json, request, Response
 from flask_cors import CORS, cross_origin
 from gopigo import *
-#from gopigoemu import *
 from subprocess import Popen, call
 import os
 import csv
@@ -15,10 +14,6 @@ CORS(app)
 stop()
 enable_servo()
 led_off(1)
-
-#subprocess.call(["raspivid", "--nopreview", "-vf", "-w", "480", "-h", "360", "-o", "camera.mp4", "-t", "9999999"])
-#subprocess.call(["nc", "192.168.43.46", "2222"])
-#os.system('LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer -i "input_file.so -f /home/pi/Desktop/Medibot/Server -n camera.jpg" -o "output_http.so -w /usr/local/www"')
 
 
 def siren():

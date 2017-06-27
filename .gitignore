@@ -7,3 +7,4 @@ VB Client/packages
 *.user
 *.suo
 *.sln.cache
+**/Thumbs.db
