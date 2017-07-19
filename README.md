@@ -1,6 +1,6 @@
 # Medibot
 
-Medibot is a robot to help the disabled and elderly in emergency situations, we intend to to showcase this project at the Big Bang Fair.
+Medibot is a robot to help the disabled and elderly in emergency situations, we showcased this project at the Big Bang Fair.
 
 ## Built With
 
